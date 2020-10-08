@@ -15,8 +15,9 @@ The radiation source is generally assumed to be a cylinder, whose central axis i
 Just copy the scripts to the directory where you will use them. 
 
 ## Dependencies
-The code relies on scipy.integrate. The example script also uses matplotlib for plotting.
 These scripts were written in Python 2.7.
+
+The code relies on scipy.integrate. The example script also uses matplotlib for plotting.
 
 ## Usage
 
