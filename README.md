@@ -15,6 +15,8 @@ The radiation source is generally assumed to be a cylinder, whose central axis i
 Just copy the scripts to the directory where you will use them. 
 
 ## Dependencies
+These scripts were written in Python 2.7.
+
 The code relies on scipy.integrate. The example script also uses matplotlib for plotting.
 
 ## Usage
@@ -59,3 +61,4 @@ CollimatorGeometry contains a static method called vectorToStoppingTargetCenter(
 
 ## References
 L. Ruby, J.B. Rechen, "A simpler approach to the geometrical efficiency of a parallel-disk source and detector system", _Nuclear Instruments and Methods_, **58**, 2 (1968) [DOI](https://doi.org/10.1016/0029-554X(68)90491-6).
+
