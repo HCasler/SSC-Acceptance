@@ -245,7 +245,6 @@ if __name__ == "__main__":
         # Pages 345-346,
         # ISSN 0029-554X,
         # https://doi.org/10.1016/0029-554X(68)90491-6.
-        # text found here: https://escholarship.org/uc/item/23g0z6zv
         prefactor = r_collimator / r_source
         def integrand(k):
             fac1 = math.exp(-1*k*z_dist) / k

@@ -5,7 +5,7 @@ This code calculates the fraction of particles emitted by a source that make it 
 This is the code used to calculate the results in Mu2e-doc-35098. That document also gives a basic overall desription of how the calculation works. In short, it calculates the geometric acceptance for a point source, and then integrates that over the volume of the full radiation source.
 
 ## Note on the geometry
-The coordinate system used in these scripts palces the origin at the *downstream end* of the spot-size collimator. The *z* axis is the same as the *z* axis of the stopping target in the usual Mu2e geometry. The positive *z* direction is from the stopping target, toward the STM. This is why the *z* positions of the calibration source, FOV collimator, etc are all negative.
+The coordinate system used in these scripts places the origin at the *downstream end* of the spot-size collimator. The *z* axis is the same as the *z* axis of the stopping target in the usual Mu2e geometry. The positive *z* direction is from the stopping target, toward the STM. This is why the *z* positions of the calibration source, FOV collimator, etc are all negative.
 
 Length units are centimeters.
 
@@ -56,3 +56,6 @@ The class StoppingTargetAcceptanceCalculator lets you calculate the geometric ac
 
 ## Other stuff
 CollimatorGeometry contains a static method called vectorToStoppingTargetCenter(). Pass it a position and it gives you a vector from that position to the center of the stopping target.
+
+## References
+L. Ruby, J.B. Rechen, "A simpler approach to the geometrical efficiency of a parallel-disk source and detector system", _Nuclear Instruments and Methods_, **58**, 2 (1968) [DOI](https://doi.org/10.1016/0029-554X(68)90491-6).
