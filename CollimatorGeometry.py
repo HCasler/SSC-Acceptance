@@ -83,6 +83,17 @@ class CollimatorGeometry:
         self.rightHoleRadius = 3.568/2.0
         self.name = "SixInchTungsten"
 
+    def useBlockThickness(self, depthInCm):
+        self.collimatorThickness = depthInCm
+        self.leftHoleCenterBackCoords = [-4.06, 0.0, 0.0]
+        self.rightHoleCenterBackCoords = [4.06, 0.0, 0.0]
+
+        self.leftHoleCenterFrontCoords = [-4.06, 0, -1*self.collimatorThickness]
+        self.leftHoleRadius = 1.128/2.0 #0.5642
+        self.rightHoleCenterFrontCoords = [4.06, 0, -1*self.collimatorThickness]
+        self.rightHoleRadius = 3.568/2.0
+        self.name = "CustomThickness"
+
     # angle in radians
     def useTippedHoleGeometry(self, angle=None):
         self.collimatorThickness = 9.144
